@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;800;900&display=swap');
+:root{
+    --color-primary: #000000;
+    --color-secondary: #101010;
+   
+    --card-bg-color: #333; 
+    --color-three: rgb(245, 116, 138);
+    --color-white: #fff;
+    --email-color: #999;
+    --color-hover-btn:var(--color-three);
+
+}
+*{font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+scroll-behavior:smooth ;
+}
+
+
+.header_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--color-primary);
+    max-width: 100%;
+    height: 10vh;
+    box-shadow: 2px 0 5rem;
+    
+    
+}
+
+.header_container .logo span{
+    color: var(--color-three);
+}
+
+.header_container .btn-Télécharger{
+    background: var(--color-three);
+    padding: 10px 10px 10px 0;
+    border-radius: 15px;
+    transition: all 400ms ease;
+
+}
+
+.header_container .btn-Télécharger:hover{
+   background-color: var(--color-hover-btn);
+
+}
+
+
+.header_container a{
+    color: #fff;
+   
+}
+.header_container .logo{
+    color: #fff;
+}
+
+.header_container .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   gap: 2rem;
+   color: #fff;
+    
+}
+.header_container .checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.header_container #check{
+    display: none;
+}
+
+.header_container .navbar a:hover{
+    border-bottom: 2px solid var(--color-three);
+}
+
+    
+
+/*..............profils.................*/
+
+.container_section{
+    max-width: 100%;
+    height: 90vh;
+    background: var(--card-bg-color);
+    position: relative;
+
+}
+.container_section .container_profil{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 7rem;
+    padding-top: 2rem;
+     }
+
+.container_profil .left{
+    display: block;
+    text-align: center;
+    max-width: 500px;
+    
+}
+.container_profil .left h1{
+    font-size: 2rem;
+    color: var(--color-white);
+    letter-spacing: 5px;
+}
+.container_profil .left span{
+    color: var(--color-three);
+}
+.container_profil .left p{
+    color: var(--color-white);
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
+.container_profil .left form input{
+    width: 80%;
+    height: 7vh;
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+    
+}
+.container_profil .left form input::placeholder{
+    letter-spacing: 2px;
+    color: var(--color-secondary);
+
+}
+.container_profil .left form button{
+    padding: 10px;
+    border-radius: 15px;
+     background: var(--color-three);
+     border: none;
+     color: #fff;
+     margin-left: -95px;
+     cursor: pointer;
+}
+.container_profil .left form button:hover{
+    border: 2px solid var(--color-three);
+    background: transparent;
+    color: var(--color-three);
+}
+
+.right img{
+    width: 280px;
+    padding: 50px 15% 5%;
+
+}
+
+
+   
+/*..............parcours.................*/
+
+#parcours{
+    padding-top: 0px;
+    background-color: var(--color-secondary);
+}
+
+#parcours h1{
+    text-align: center;
+    color: #fff;
+}
+
+
+.container-parcours
+{
+    max-width: 100%;
+    height: 90vh;
+    background: var(--color-primary);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: nowrap;
+    flex-basis: auto;
+
+
+
+}
+.container-parcours .box{
+    width: 300px;
+    height: 300px;
+    background: var(--color-three);
+    margin: 20px;
+    box-sizing: border-box;
+    }
+
+    .container-parcours .box span{
+        text-decoration: underline;
+        color: #000000;
+        
+    max-width: 100%;
+}
+
+
+
+/*..............qualités.................*/
+
+
+
+.container_qualités{
+    max-width: 100%;
+    height: 90vh;
+    background: var(--color-primary);
+    position: relative;
+    color: white;
+    text-align: center;
+    
+
+
+
+} 
+
+
+/*..............références.................*/
+#references{
+    padding-top: 25px;
+    text-align: center;
+    background-color: #101010;
+}
+
+#references h1{
+    padding-top: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.container_references{
+    max-width: 100%;
+    height: 90vh;
+    background: var(--color-secondary);
+    position: relative;
+    color: white;
+}
+.container_references img{
+
+    height: 80%;
+    padding-top: 5px;
+   
+
+}
+/*..............footer................*/
+
+footer{
+    background: var(--color-three);
+    font-size: 10px;
+    text-align: center;
+}
+footer img{
+   max-width: 20%;
+   height: 30px;
+   margin-left:90px;
+  
+   
+}
+
+@media (max-width: 952px) {
+    .header_container .logo{
+        font-size: 30px;
+        padding-left: 50px;
+        }
+        .header_container .navbar{
+            font-size: 16px;
+        }
+       .header_container li a{
+        font-size: 16px;
+       }
+   
+ }
+    
+@media (max-width: 858px){
+    .header_container .checkbtn{
+        display: block;
+
+    }
+    .header_container .navbar{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        display: block;
+    }
+    .header_container .navbar{
+        font-size: 20px;
+    }
+
+     li{
+        display: block;
+    }
+    li a{
+        font-size: 20px;
+
+    }
+    }
+    @media (max-width: 858px) {
+        .header_container .checkbtn{
+            display: block;
+        }
+        
+    }
+    
+
+
+
+    
+
+
+
